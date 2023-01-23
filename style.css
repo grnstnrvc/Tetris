@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    touch-action: manipulation;
+}
+
+html{
+    font-family: 'Chelsea Market','Caveat','Raleway', 'cursive';
+    overflow: hidden;
+
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,#16191a , #242424, #16191a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;    
+
+}
+
+canvas{
+    background-color: rgb(13, 13, 15);    
+}
+
+#nextCanvas{
+    background-color: #000204e8;
+    box-shadow: none;
+
+}
+
+.result-container {
+    background-color: #aaa69d;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.result-container #game-header{
+    height: 20%;
+    font-size: 2rem;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.result-container #score{
+    height: 15%;
+}
+
+.result-container #next-block{
+    display: block;
+    align-self: center;
+    height: 45%;
+    width: 100%;
+    text-align: center;        
+}
+/* moblie */
+.result-container #mobile__contorls{
+    align-self: center;
+    color: white;
+    font-weight: normal;
+    font-size: 1.1125rem;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.result-container #mobile__contorls  #rotate:active{
+    transform: scale(0.95);
+}
+.result-container #mobile__contorls  #leftRight div:active{
+    transform: scale(0.95);
+}
+.result-container #mobile__contorls  #down:active{
+    transform: scale(0.95);
+}
+
+.result-container #mobile__contorls #rotate{
+    border: 1px solid black;
+    background-color: #30336b;   
+    border-radius: 5px;
+    height: 20%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    user-select: none;
+}
+
+.result-container #mobile__contorls #rotate #rotate__text{
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+    user-select: none;
+}
+
+.result-container #mobile__contorls #rotate #rotate__text::before{
+    content: "Rotate";
+}
+.result-container #mobile__contorls #leftRight{
+    margin: 4px 4px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.result-container #mobile__contorls #leftRight div{
+    background-color: #30336b;   
+    border-radius: 5px;
+    width: 48%;
+    height: 100%;
+    border: 1px solid black;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.result-container #mobile__contorls #leftRight #left__div{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.result-container #mobile__contorls #down{ 
+    border: 1px solid black;
+    background-color: #30336b;   
+    width: 60%;
+    border-radius: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* moblie */
+
+.result-container #contorls{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.result-container #contorls #controls__play{
+    background-color: #27ae60;
+    font-size: 1.5rem;
+    height: auto;
+    padding: 0.3rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.result-container #contorls #controls__play:hover{
+    background-color: rgb(13, 13, 15);
+    color:#27ae60;
+    cursor: pointer;
+}
+
+.result-container #contorls #controls__play:active{
+    transform: scale(0.95);
+}
+
+
+.hidden{
+    color: #fff;
+    font-family: 'Caveat';
+    visibility: hidden;
+}
+.hidden2{
+    color:#fff;
+    font-family: 'Raleway';
+    visibility: hidden;
+}

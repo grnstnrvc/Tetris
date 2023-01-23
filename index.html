@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Raleway&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="fontawesome/all.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Steve's Tetris</title>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+    <div class="result-container">
+        <div id="game-header"><p>TETRIS</p></div>
+        <div id="score" class="score">
+            <p>Score: <span id="score__text">0</span></p>
+            <p>Level: <span id="level__text">1</span></p>
+        </div>        
+        <div id="next-block" class="next-block">
+            <canvas id="nextCanvas"></canvas>
+        </div>
+        <div id="mobile__contorls" class="mobile__contorls">
+            <div id="rotate"><div id="rotate__text"></div></div>
+            <div id="leftRight">
+                <div id="left__div">
+                    <i class="fas fa-chevron-left fa-2x"></i>
+            </div>
+            <div id="right__div">
+                <i class="fas fa-chevron-right fa-2x"></i>
+            </div>
+        </div>
+            <div id="down">Down</i></div>
+        </div>
+        <div id="contorls" class="contorls"><span id="controls__play">Play</span></div>
+    </div>
+
+
+    <audio id="fourlines" src="audio/fourlines.wav"></audio>
+    <audio id="oneline" src="audio/oneline.wav"></audio>
+    <audio id="gameover" src="audio/gameover.wav"></audio>
+    <span class="hidden hidethis">.</span>
+    <span class="hidden2 hidethis">.</span>
+    <script src="piece.js"></script>
+    <script src="board.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
