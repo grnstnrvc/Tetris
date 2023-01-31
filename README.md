@@ -1,2 +1,2 @@
 # Tetris
-Blast from the past, igramo se.
+Blast from the past, manipulacija sa DOMom.
